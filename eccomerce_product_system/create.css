@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,200&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    
+}
+nav{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    
+    justify-content: space-between;
+    z-index: 1;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.1);
+}
+nav img{
+    width: 150px;
+    height: 40px;
+    position: relative;
+    left: 40px;
+    top: 10px;
+}
+nav .icons-links ul li{
+   list-style: none;
+   display: inline-block;
+   position: relative;
+   right: 40px;
+   top: 20px;
+}
+nav .icons-links ul li a{
+    text-decoration: none;
+    color: #333;
+    text-transform: capitalize;
+    margin-right: 40px;
+}
+.icons-links ul li .add{
+    color: #00C9A7;
+}
+.icons-links ul li .add::after{
+    width: 30px;
+    height: 3px;
+    background-color: #00C9A7;
+    content: "";
+    position: absolute;
+    border-radius: 22px;
+    top: 25px;
+    left: 0px;
+}
+.icons-links ul li a:hover{
+    color: #00C9A7;
+}
+header{
+    width: 100%;
+    height: 50vh;
+    background-image: url(img/banner/b19.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.header-information-create-account-section{
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.header-information-create-account-section h3{
+    font-size: 40px;
+    text-transform: capitalize;
+}
+.header-information-create-account-section p{
+    color: white;
+    font-weight: 800;
+}
+.create-container{
+    width: 60%;
+    height: 400px;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.4);
+display: flex;
+border-radius: 0.4em;
+position:absolute;
+top: 95%;
+left: 50%;
+transform: translate(-50%,-50%);
+margin-bottom: 20px;
+}
+.create-1{
+    width: 50%;
+    height: 100%;
+    background-image: url(img/products/f1.jpg);
+    background-position: center;
+    background-size: cover;
+}.create-2{
+    width: 50%;
+    height: 100%;
+    padding: 1.2em;
+}
+.information-create-container h3{
+    color: #333;
+    font-weight: 600;
+    text-transform: capitalize;
+
+}
+.form-container form input:not(#c){
+    margin-bottom: 20px;
+    width: 80%;
+    margin-top: 20px;
+    height: 40px;
+    padding: 0.5em;
+    outline: 0;
+    border:  1px solid rgba(0,0,0,0.4);
+    border-radius: 0.3em;
+}
+.form-container input:focus{
+    border: 1px solid #00C9A7;
+}
+.input-box input{
+   width: 20px;
+   height: 20px;
+   cursor: pointer;
+}
+.input-box span{
+    font-size: 14px;
+    color: #333;
+    position: relative;
+    left: 10px;
+    top: -4px;
+}
+ button{
+    width: 80%;
+    position: relative;
+    top: 4px;
+    height: 40px;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    color: #333;
+    background-color: #00c9a7ac;
+    font-weight: 500;
+    border-radius: 0.3em;
+ }

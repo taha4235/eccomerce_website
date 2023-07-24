@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,200&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    
+}
+nav{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    
+    justify-content: space-between;
+    z-index: 1;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.1);
+}
+nav img{
+    width: 150px;
+    height: 40px;
+    position: relative;
+    left: 40px;
+    top: 10px;
+}
+nav .icons-links ul li{
+   list-style: none;
+   display: inline-block;
+   position: relative;
+   right: 40px;
+   top: 20px;
+}
+nav .icons-links ul li a{
+    text-decoration: none;
+    color: #333;
+    text-transform: capitalize;
+    margin-right: 40px;
+}
+.icons-links ul li .add{
+    color: #00C9A7;
+}
+.icons-links ul li .add::after{
+    width: 30px;
+    height: 3px;
+    background-color: #00C9A7;
+    content: "";
+    position: absolute;
+    border-radius: 22px;
+    top: 25px;
+    left: 0px;
+}
+.icons-links ul li a:hover{
+    color: #00C9A7;
+}
+header{
+    width: 100%;
+    height: 50vh;
+    background-image: url(img/about/banner.png);
+    background-position: center;
+    background-size: contain;
+}
+.message-information{
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+   position: relative;
+   top: 100px;
+}
+.message-information h2{
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.message-information p{
+    color: white;
+    text-transform: capitalize;
+}
+.message-information span{
+    text-transform: uppercase;
+}
+.get-in-touch-form{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    padding: 3em;
+}
+.get-in-touch-form .container-1{
+    width: 50%;
+    height: 100%;
+}
+.get-in-touch-form .container-2{
+    width:50%;
+height: 100%;
+}
+.container-2 iframe{
+    width: 100%;
+height: 100%;
+}
+.some-description h5{
+    font-size: 25px;
+    text-transform: capitalize;
+    color: #333;
+    margin-bottom: 10px;
+}
+.some-description h3{
+    font-size: 17px;
+    color: #333;
+    margin-bottom: 14px;
+}
+.office{
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+.some-description ul li{
+    list-style: none;
+    display: block;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.some-description ul li a{
+    text-decoration: none;
+    color: #333;
+}
+.some-description ul li a span{
+    margin-left: 10px;
+}
+.contact-container{
+    width: 100%;
+    display: flex;
+    padding: 3em;
+    height: 80vh;
+    margin-top: 100px;
+}
+.contact-container-1 h5{
+    font-size: 25px;
+    text-transform: capitalize;
+    color: #333;
+    margin-bottom: 10px;
+}
+.contact-container-1 h3{
+    color: #333;
+    text-transform: capitalize;
+}
+.contact-container input{
+    width: 500px;
+    height: 40px;
+    margin-bottom: 25px;
+    padding: 0.5em;
+    border-radius: 0.4em;
+    outline: 0;
+    border: 1px solid rgba(0,0,0,0.1);
+    margin-top: 10px;
+}
+.contact-container input:focus{
+    border: 1px solid rgba(0,0,0,0.4);
+}
+.contact-container textarea{
+    width: 500px;
+    height: 150px;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    border: 1px solid rgba(0,0,0,0.1);
+outline: 0;
+resize: none;
+}
+.contact-container textarea:focus{
+    border: 1px solid rgba(0,0,0,0.4);
+}
+.contact-container button{
+    width: 120px;
+    height: 30px;
+    outline: 0;
+    border: 0;
+    background-color: #00C9A7;
+    color: white;
+    border-radius: 0.4em;
+    text-transform: capitalize;
+    font-weight: 900;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.contact-container-2{
+    width: 50%;
+    height: 100%;
+
+}
+.review-container-1{
+    display: flex;
+    position: relative;
+    left: 90px;
+    top: 70px;
+}
+.review-container-1 h4{
+    font-size: 17px;
+    color: #333;
+    text-transform: capitalize;
+}
+.review-information-container{
+    position: relative;
+    left: 10px;
+}
+.review-information-container p{
+    font-size: 13px;
+    color: #333;
+}
+.subscribe-container{
+    width: 100%;
+    height: 20vh;
+    padding: 2em;
+    background-image: url(img/banner/b14.png);
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(61, 30, 104, 0.4);
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+.name-title{
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.subscribe-containers{
+    width: 450px;
+    height: 40px;
+    background-color: white;
+    border-radius: 0.2em;
+    display: grid;
+    grid-template-columns: 9fr 2fr;
+    border-radius: 0.4em;
+    position: relative;
+    top: 10px;
+}
+.subscribe-containers input{
+    outline: 0;
+    border: 0;
+    padding: 0.4em;
+    border-radius: 0.3em;
+}
+.subscribe-containers button{
+    background-color: #00704A;
+    color: white;
+    border-radius: 0.4em;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+.sign-up-message-container a{
+    text-decoration: none;
+    color: yellow;
+    text-transform: capitalize;
+    font-weight: 900;
+}
+footer{
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    padding: 3em;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.contact-container-2{
+    background-image: url(img/products/f1.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-left: 40px;
+    margin-top: 30px;
+    border-radius: 0.3em;
+}
+footer p{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 430px;
+    cursor: pointer;
+}

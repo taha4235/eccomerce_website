@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,200&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    
+}
+nav{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    
+    justify-content: space-between;
+    z-index: 1;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.1);
+}
+nav img{
+    width: 150px;
+    height: 40px;
+    position: relative;
+    left: 40px;
+    top: 10px;
+}
+nav .icons-links ul li{
+   list-style: none;
+   display: inline-block;
+   position: relative;
+   right: 40px;
+   top: 20px;
+}
+nav .icons-links ul li a{
+    text-decoration: none;
+    color: #333;
+    text-transform: capitalize;
+    margin-right: 40px;
+}
+.icons-links ul li .add{
+    color: #00C9A7;
+}
+.icons-links ul li .add::after{
+    width: 30px;
+    height: 3px;
+    background-color: #00C9A7;
+    content: "";
+    position: absolute;
+    border-radius: 22px;
+    top: 25px;
+    left: 0px;
+}
+.icons-links ul li a:hover{
+    color: #00C9A7;
+}
+header{
+    width: 100%;
+    height: 50vh;
+    background-image: url(img/about/banner.png);
+    background-position: center;
+    background-size: cover;
+    background-color: #333;
+    color: white;
+}
+.header-information-create-account-section{
+    position: absolute;
+    top: 31%;
+    text-align: center;
+    justify-content: center;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.header-information-create-account-section h3{
+    font-size: 40px;
+    text-transform: capitalize;
+}
+.infos-container{
+    width: 100%;
+    height: 50vh;
+    padding: 3em;
+    display: flex;
+}
+.about-container-1{
+    width: 50%;
+    height: 100%;
+    background-image: url(img/about/a6.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.about-container-2{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    left: 40px;
+    padding: 0.5em;
+}
+.about-container-2 h3{
+    font-size: 40px;
+    color:#333;
+    
+}
+.about-container-2 p{
+    font-size: 14px;
+    color: #333;
+}
+.about-container-2 a{
+    text-decoration: none;
+    padding: 0.6em 1.5em;
+    background-color: #333;
+    color: white;
+    position: relative;
+    top: 40px;
+  border-radius: 0.2em;
+    cursor: pointer;
+    font-weight: 700;
+    text-transform: capitalize;
+}.about-container-2 a:hover{
+    border-radius: 15% 15% 20% 20%;
+    transition: 1.5s all ease-in-out;
+}
+.download-our-container-app{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    
+}
+.title-name-app{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 2.3em;
+    font-size: 40px;
+    text-transform: capitalize;
+}
+.video-container{
+    width: 50%;
+    height: 70vh;
+    background-color: #333;
+    position: absolute;
+    top: 1100px;
+    margin-bottom: 40px;
+    border-radius: 0.4em;
+    transform: translate(-50%,-50%);
+    left: 50%;
+}
+.video-container video{
+    width: 100%;
+    height: 100%;
+}
+.subscribe-container{
+    width: 100%;
+    height: 20vh;
+    padding: 2em;
+    background-image: url(img/banner/b14.png);
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(61, 30, 104, 0.4);
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.name-title{
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.subscribe-containers{
+    width: 450px;
+    height: 40px;
+    background-color: white;
+    border-radius: 0.2em;
+    display: grid;
+    grid-template-columns: 9fr 2fr;
+    border-radius: 0.4em;
+    position: relative;
+    top: 10px;
+}
+.subscribe-containers input{
+    outline: 0;
+    border: 0;
+    padding: 0.4em;
+    border-radius: 0.3em;
+}
+.subscribe-containers button{
+    background-color: #00704A;
+    color: white;
+    border-radius: 0.4em;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+.sign-up-message-container a{
+    text-decoration: none;
+    color: yellow;
+    text-transform: capitalize;
+    font-weight: 900;
+}
+footer{
+    width: 100%;
+    height: 40vh;
+    display: grid;
+    padding: 3em;
+    grid-template-columns: repeat(4,1fr);
+}
+.footer-container-1 img{
+    margin-bottom: 20px;
+}
+.contact-container .c{
+    font-size: 25px;
+    text-transform: capitalize;
+    line-height: 2;
+    color: #222;
+}
+.contact-container ul li{
+    list-style: none;
+    font-size: 15px;
+}
+.contact-container ul li span{
+    margin-left: 5px;
+    color: #222;
+    text-transform: capitalize;
+}
+.container-links ul li{
+    list-style: none;
+    display: inline-block;
+}
+.contact-container b{
+    text-transform: capitalize;
+}
+.contact-container h5:not(.c){
+    margin-top: 10px;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.container-links ul li a{
+    text-decoration: none;
+    padding: 3px;
+    color: #222;
+}
+.footer-container-2 h5{
+    text-transform: capitalize;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 19px;
+}
+.footer-container-3 h5{
+    text-transform: capitalize;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 19px;
+}
+.footer-container-2 ul li{
+    list-style: none;
+    display: block;
+    margin-bottom: 20px;
+}
+.footer-container-2 ul li a{
+    text-decoration: none;
+    color: #222;
+    text-transform: capitalize;
+}
+.footer-container-2 ul li a:hover{
+    color: silver;
+}
+.footer-container-3 ul li{
+    list-style: none;
+    display: block;
+    margin-bottom: 20px;
+}
+.footer-container-3 ul li a{
+    text-decoration: none;
+    color: #222;
+    text-transform: capitalize;
+}
+.footer-container-3 ul li a:hover{
+    color: silver;
+}
+.footer-container-4 h5{
+    color: #222;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.footer-container-4 p{
+    color: gray;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+.btn{
+    display: flex;
+}
+.btn button{
+    width: 140px;
+    height: 50px;
+    margin-right: 10px;
+    margin-top: 20px;
+    outline: 0;
+    border: 0;
+    background-color: transparent;
+    border-radius: 0.4em;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.1);
+}
+.btn-1{
+    background-image: url(img/pay/app.jpg);
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+}
+.btn-2{
+    background-image: url(img/pay/play.jpg);
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+}
+.footer-container-4 h4{
+    text-transform: capitalize;
+    color: gray;
+    font-weight: 300;
+    margin-top: 30px;
+}
+.payment-gateway{
+    width: 350px;
+    height: 60px;
+    outline:0;
+    border: 0;
+    background-color: transparent;
+cursor: pointer;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.1);
+}
+.payment-gateway img{
+    width: 100%;
+    height: 100%;
+}

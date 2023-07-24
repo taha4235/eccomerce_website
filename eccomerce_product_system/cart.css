@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,200&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: auto;
+    
+}
+nav{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    
+    justify-content: space-between;
+    z-index: 1;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.1);
+}
+.icons-links ul li a:focus{
+    color: #00C9A7;
+    border-bottom: #00C9A7;
+}
+nav img{
+    width: 150px;
+    height: 40px;
+    position: relative;
+    left: 40px;
+    top: 10px;
+}
+nav .icons-links ul li{
+   list-style: none;
+   display: inline-block;
+   position: relative;
+   right: 40px;
+   top: 20px;
+}
+nav .icons-links ul li a{
+    text-decoration: none;
+    color: #333;
+    text-transform: capitalize;
+    margin-right: 40px;
+}
+.icons-links ul li .add{
+    color: #00C9A7;
+}
+.icons-links ul li .add::after{
+    width: 30px;
+    height: 3px;
+    background-color: #00C9A7;
+    content: "";
+    position: absolute;
+    border-radius: 22px;
+    top: 25px;
+    left: 0px;
+}
+.icons-links ul li a:hover{
+    color: #00C9A7;
+}
+header{
+    width: 100%;
+    height: 50vh;
+    background-image: url(img/about/banner.png);
+    background-position: center;
+    background-size: contain;
+    z-index: 9999;
+}
+.card-information-container{
+    position: absolute;
+    top:32%;
+    font-weight: 600;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    text-align: center;
+    justify-content: center;
+}
+.card-information-container h3{
+    font-size: 50px;
+    text-transform: capitalize;
+}
+.card-information-container p{
+    font-size: 13px;
+}
+.table-container{
+    width: 100%;
+    padding: 3em;
+}
+.table-container table{
+    width: 100%;
+}
+.table-container table tr th{
+    text-transform: uppercase;
+    color: #333;
+    font-weight: 800;
+    
+    text-shadow: 2px 2px 2px 2px rgba(0,0,0,0.1);
+}
+.table-container table tr td{
+text-align: center;
+justify-content: center;
+position: relative;
+top: 7px;
+padding: 1em;
+}
+.table-container table tr td img{
+    width: 50px;
+    border-radius: 0.1em;
+}
+
+.table-container table tr td input{
+    width: 50px;
+    border-radius: 0.1em;
+    outline: 0;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 0.1em;
+    padding: 0.2em;
+
+}
+.table-container tr{
+    border-bottom: 1px solid #dcdcdc;
+}
+.coupon-container{
+   padding: 2em;
+}
+.coupon-container h4{
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+.input-container{
+   display: flex;
+}
+.input-container input{
+    width: 330px;
+    height: 30px;
+    outline: 0;
+    border: 1.5px solid rgba(0,0,0,0.1);
+    padding: 0.6em;
+    border-radius: 0.3em;
+}
+.input-container input:focus{
+    border: 1px solid rgba(0,0,0,0.4);
+}
+.input-container button{
+    margin-left: 30px;
+    width: 70px;
+    height: 30px;
+    background-color: #027f6a;
+    color: white;
+    outline:0;
+    border: 0;
+    border-radius: 0.2em;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-weight: 800;
+}
+.input-container button:hover{
+    background-color: #00C9A7;
+    transition: 0.4s ease-in-out;
+    font-weight: normal;
+}
+footer{
+    width: 100%;
+    height: 40vh;
+    display: grid;
+    padding: 3em;
+    grid-template-columns: repeat(4,1fr);
+}
+.footer-container-1 img{
+    margin-bottom: 20px;
+}
+.contact-container .c{
+    font-size: 25px;
+    text-transform: capitalize;
+    line-height: 2;
+    color: #222;
+}
+.contact-container ul li{
+    list-style: none;
+    font-size: 15px;
+}
+.contact-container ul li span{
+    margin-left: 5px;
+    color: #222;
+    text-transform: capitalize;
+}
+.container-links ul li{
+    list-style: none;
+    display: inline-block;
+}
+.contact-container b{
+    text-transform: capitalize;
+}
+.contact-container h5:not(.c){
+    margin-top: 10px;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.container-links ul li a{
+    text-decoration: none;
+    padding: 3px;
+    color: #222;
+}
+.footer-container-2 h5{
+    text-transform: capitalize;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 19px;
+}
+.footer-container-3 h5{
+    text-transform: capitalize;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 19px;
+}
+.footer-container-2 ul li{
+    list-style: none;
+    display: block;
+    margin-bottom: 20px;
+}
+.footer-container-2 ul li a{
+    text-decoration: none;
+    color: #222;
+    text-transform: capitalize;
+}
+.footer-container-2 ul li a:hover{
+    color: silver;
+}
+.footer-container-3 ul li{
+    list-style: none;
+    display: block;
+    margin-bottom: 20px;
+}
+.footer-container-3 ul li a{
+    text-decoration: none;
+    color: #222;
+    text-transform: capitalize;
+}
+.footer-container-3 ul li a:hover{
+    color: silver;
+}
+.footer-container-4 h5{
+    color: #222;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.footer-container-4 p{
+    color: gray;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+.btn{
+    display: flex;
+}
+.btn button{
+    width: 140px;
+    height: 50px;
+    margin-right: 10px;
+    margin-top: 20px;
+    outline: 0;
+    border: 0;
+    background-color: transparent;
+    border-radius: 0.4em;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.1);
+}
+.btn-1{
+    background-image: url(img/pay/app.jpg);
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+}
+.btn-2{
+    background-image: url(img/pay/play.jpg);
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+}
+.footer-container-4 h4{
+    text-transform: capitalize;
+    color: gray;
+    font-weight: 300;
+    margin-top: 30px;
+}
+.payment-gateway{
+    width: 350px;
+    height: 60px;
+    outline:0;
+    border: 0;
+    background-color: transparent;
+cursor: pointer;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.1);
+}
+.payment-gateway img{
+    width: 100%;
+    height: 100%;
+}
